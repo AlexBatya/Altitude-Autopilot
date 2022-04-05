@@ -1,0 +1,851 @@
+Model {
+  Name			  "gouskov"
+  Version		  3.00
+  SimParamPage		  "WorkspaceI/O"
+  SampleTimeColors	  off
+  InvariantConstants	  off
+  WideVectorLines	  off
+  ShowLineWidths	  off
+  ShowPortDataTypes	  off
+  StartTime		  "0.0"
+  StopTime		  "100.0"
+  SolverMode		  "Auto"
+  Solver		  "ode45"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  Refine		  "1"
+  MaxStep		  "auto"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  MaxOrder		  5
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Matrix"
+  LimitMaxRows		  off
+  MaxRows		  "1000"
+  Decimation		  "1"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  IntegerOverflowMsg	  "warning"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  SignalLabelMismatchMsg  "none"
+  ConsistencyChecking	  "off"
+  ZeroCross		  on
+  SimulationMode	  "normal"
+  BlockDataTips		  on
+  BlockParametersDataTip  on
+  BlockAttributesDataTip  off
+  BlockPortWidthsDataTip  off
+  BlockDescriptionStringDataTip	on
+  BlockMaskParametersDataTip off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  OptimizeBlockIOStorage  on
+  BufferReuse		  on
+  BooleanDataType	  off
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWInlineParameters	  off
+  RTWRetainRTWFile	  off
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "oneshot"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  off
+  Created		  "Tue Oct 23 21:48:00 2001"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Thu Nov 01 16:19:28 2001"
+  ModelVersionFormat	  "1.%<AutoIncrement:14>"
+  ConfigurationManager	  "none"
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "gouskov"
+    Location		    [37, 85, 998, 699]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "automatic"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "a4letter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "138"
+    AutoZoom		    on
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Clock
+      Name		      "Clock"
+      Position		      [495, 315, 515, 335]
+      DisplayTime	      off
+      Decimation	      "10"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant"
+      Position		      [130, 330, 160, 360]
+      Orientation	      "left"
+      BackgroundColor	      "lightBlue"
+      ShowName		      off
+      Value		      "Ih"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant1"
+      Position		      [275, 330, 305, 360]
+      Orientation	      "left"
+      BackgroundColor	      "lightBlue"
+      ShowName		      off
+      Value		      "Ip"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant2"
+      Position		      [490, 25, 520, 55]
+      ShowName		      off
+      FontSize		      8
+      Value		      "N_of_var"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Delta_H"
+      Ports		      [1, 0, 0, 0, 0]
+      Position		      [345, 114, 375, 146]
+      BackgroundColor	      "green"
+      Floating		      off
+      Location		      [60, 202, 602, 622]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"Delta_H"
+      }
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      DataFormat	      "StructureWithTime"
+      LimitMaxRows	      on
+      MaxRows		      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Delta_H_max"
+      Ports		      [1, 0, 0, 0, 0]
+      Position		      [550, 180, 640, 210]
+      BackgroundColor	      "green"
+      Format		      "short"
+      Decimation	      "1"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Delta_H_зад"
+      Position		      [345, 180, 375, 210]
+      Orientation	      "left"
+      BackgroundColor	      "orange"
+      Value		      "DHz"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Delta_H_уст"
+      Ports		      [1, 0, 0, 0, 0]
+      Position		      [550, 245, 640, 275]
+      BackgroundColor	      "green"
+      Format		      "short"
+      Decimation	      "1"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Delta_Ny"
+      Ports		      [1, 0, 0, 0, 0]
+      Position		      [345, 44, 375, 76]
+      BackgroundColor	      "green"
+      Floating		      off
+      Location		      [20, 309, 558, 719]
+      Open		      on
+      NumInputPorts	      "1"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "xonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      DataFormat	      "StructureWithTime"
+      LimitMaxRows	      on
+      MaxRows		      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Delta_Ny_max"
+      Ports		      [1, 0, 0, 0, 0]
+      Position		      [550, 110, 640, 140]
+      BackgroundColor	      "green"
+      Format		      "short"
+      Decimation	      "1"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Demux
+      Name		      "Demux"
+      Ports		      [1, 4, 0, 0, 0]
+      Position		      [185, 106, 190, 144]
+      BackgroundColor	      "black"
+      ShowName		      off
+      Outputs		      "4"
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain"
+      Position		      [35, 55, 65, 85]
+      Orientation	      "left"
+      ShowName		      off
+      Gain		      "Kwz"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain1"
+      Position		      [70, 180, 100, 210]
+      Orientation	      "left"
+      ShowName		      off
+      Gain		      "Ktet"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain2"
+      Position		      [285, 45, 315, 75]
+      ShowName		      off
+      Gain		      "a51"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain3"
+      Position		      [235, 215, 265, 245]
+      Orientation	      "left"
+      BackgroundColor	      "lightBlue"
+      ShowName		      off
+      Gain		      "Ih"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain4"
+      Position		      [235, 285, 265, 315]
+      Orientation	      "left"
+      BackgroundColor	      "lightBlue"
+      ShowName		      off
+      Gain		      "Ip"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Ih"
+      Ports		      [1, 0, 0, 0, 0]
+      Position		      [25, 330, 115, 360]
+      Orientation	      "left"
+      BackgroundColor	      "green"
+      Format		      "short"
+      Decimation	      "1"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Integrator
+      Name		      "Integrator"
+      Ports		      [1, 1, 0, 0, 0]
+      Position		      [280, 255, 310, 285]
+      Orientation	      "down"
+      ShowName		      off
+      ExternalReset	      "none"
+      InitialConditionSource  "internal"
+      InitialCondition	      "0"
+      LimitOutput	      off
+      UpperSaturationLimit    "inf"
+      LowerSaturationLimit    "-inf"
+      ShowSaturationPort      off
+      ShowStatePort	      off
+      AbsoluteTolerance	      "auto"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Ip"
+      Ports		      [1, 0, 0, 0, 0]
+      Position		      [170, 330, 260, 360]
+      Orientation	      "left"
+      BackgroundColor	      "green"
+      Format		      "short"
+      Decimation	      "1"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Manual Switch"
+      Ports		      [2, 1, 0, 0, 0]
+      Position		      [350, 232, 380, 268]
+      BackgroundColor	      "yellow"
+      ShowName		      off
+      SourceBlock	      "simulink3/Nonlinear/Manual Switch"
+      SourceType	      "Manual Switch"
+      sw		      "0"
+      action		      "0"
+    }
+    Block {
+      BlockType		      MinMax
+      Name		      "MinMax"
+      Ports		      [2, 1, 0, 0, 0]
+      Position		      [490, 156, 520, 189]
+      ShowName		      off
+      Function		      "max"
+      Inputs		      "2"
+    }
+    Block {
+      BlockType		      MinMax
+      Name		      "MinMax1"
+      Ports		      [2, 1, 0, 0, 0]
+      Position		      [490, 86, 520, 119]
+      ShowName		      off
+      Function		      "max"
+      Inputs		      "2"
+    }
+    Block {
+      BlockType		      RelationalOperator
+      Name		      "Relational\nOperator"
+      Position		      [405, 282, 435, 313]
+      ShowName		      off
+      Operator		      "<="
+    }
+    Block {
+      BlockType		      Stop
+      Name		      "Stop Simulation"
+      Position		      [450, 280, 490, 320]
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum"
+      Ports		      [2, 1, 0, 0, 0]
+      Position		      [45, 115, 65, 135]
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|++"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum1"
+      Ports		      [2, 1, 0, 0, 0]
+      Position		      [165, 185, 185, 205]
+      Orientation	      "left"
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|+-"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum2"
+      Ports		      [2, 1, 0, 0, 0]
+      Position		      [125, 185, 145, 205]
+      Orientation	      "left"
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|++"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum3"
+      Ports		      [2, 1, 0, 0, 0]
+      Position		      [285, 185, 305, 205]
+      Orientation	      "down"
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|-+"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum4"
+      Ports		      [2, 1, 0, 0, 0]
+      Position		      [190, 220, 210, 240]
+      Orientation	      "left"
+      NamePlacement	      "alternate"
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|++"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Display
+      Name		      "T_cp"
+      Ports		      [1, 0, 0, 0, 0]
+      Position		      [550, 310, 640, 340]
+      BackgroundColor	      "green"
+      Format		      "short"
+      Decimation	      "1"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      ZeroOrderHold
+      Name		      "Zero-Order\nHold"
+      Position		      [425, 146, 460, 184]
+      ShowName		      off
+      SampleTime	      "1"
+    }
+    Block {
+      BlockType		      ZeroOrderHold
+      Name		      "Zero-Order\nHold1"
+      Position		      [425, 76, 460, 114]
+      ShowName		      off
+      SampleTime	      "1"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "f"
+      Ports		      [1, 0, 0, 0, 0]
+      Position		      [25, 280, 115, 310]
+      Orientation	      "left"
+      BackgroundColor	      "green"
+      Format		      "short"
+      Decimation	      "1"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Вариант"
+      Ports		      [1, 0, 0, 0, 0]
+      Position		      [550, 25, 640, 55]
+      Format		      "short"
+      Decimation	      "1"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Возмущение"
+      Position		      [70, 230, 100, 260]
+      BackgroundColor	      "lightBlue"
+      Value		      "f"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Возмущение1"
+      Position		      [320, 330, 350, 360]
+      Orientation	      "up"
+      ShowName		      off
+      Value		      "1"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Возмущение2"
+      Position		      [370, 330, 400, 360]
+      Orientation	      "up"
+      ShowName		      off
+      Value		      "0"
+    }
+    Block {
+      BlockType		      StateSpace
+      Name		      "Самолет"
+      Position		      [95, 108, 155, 142]
+      BackgroundColor	      "orange"
+      A			      "[-a11 1 0 0; -a21 -a22 0 0; 0 1 0 0; -a46 1 a46"
+" 0]"
+      B			      "[0; -b2; 0; 0]"
+      C			      "[0 1 0 0; 1 0 0 0; 0 0 0 1;0 0 1 0]"
+      D			      "[0; 0; 0; 0]"
+      X0		      "0"
+    }
+    Line {
+      SrcBlock		      "Gain"
+      SrcPort		      1
+      DstBlock		      "Sum"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Gain1"
+      SrcPort		      1
+      Points		      [-10, 0]
+      DstBlock		      "Sum"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Sum"
+      SrcPort		      1
+      DstBlock		      "Самолет"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Самолет"
+      SrcPort		      1
+      DstBlock		      "Demux"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum1"
+      SrcPort		      1
+      DstBlock		      "Sum2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum2"
+      SrcPort		      1
+      DstBlock		      "Gain1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Integrator"
+      SrcPort		      1
+      Points		      [0, 10]
+      DstBlock		      "Gain4"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Demux"
+      SrcPort		      1
+      Points		      [5, 0; 0, -40]
+      DstBlock		      "Gain"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Demux"
+      SrcPort		      3
+      Points		      [110, 0]
+      Branch {
+	DstBlock		"Delta_H"
+	DstPort			1
+      }
+      Branch {
+	Points			[-10, 0; 0, 35]
+	Branch {
+	  DstBlock		  "Sum3"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [105, 0]
+	  Branch {
+	    DstBlock		    "Zero-Order\nHold"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 95]
+	    DstBlock		    "Delta_H_уст"
+	    DstPort		    1
+	  }
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Demux"
+      SrcPort		      4
+      Points		      [5, 0]
+      DstBlock		      "Sum1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Demux"
+      SrcPort		      2
+      Points		      [70, 0; 0, -60]
+      DstBlock		      "Gain2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Zero-Order\nHold"
+      SrcPort		      1
+      DstBlock		      "MinMax"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "MinMax"
+      SrcPort		      1
+      Points		      [10, 0; 0, 20]
+      Branch {
+	DstBlock		"Delta_H_max"
+	DstPort			1
+      }
+      Branch {
+	Points			[-60, 0]
+	DstBlock		"MinMax"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Zero-Order\nHold1"
+      SrcPort		      1
+      DstBlock		      "MinMax1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "MinMax1"
+      SrcPort		      1
+      Points		      [10, 0; 0, 20]
+      Branch {
+	DstBlock		"Delta_Ny_max"
+	DstPort			1
+      }
+      Branch {
+	Points			[-60, 0]
+	DstBlock		"MinMax1"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Gain3"
+      SrcPort		      1
+      DstBlock		      "Sum4"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum4"
+      SrcPort		      1
+      Points		      [-10, 0]
+      DstBlock		      "Sum1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Gain2"
+      SrcPort		      1
+      Points		      [5, 0]
+      Branch {
+	Points			[0, 35]
+	DstBlock		"Zero-Order\nHold1"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Delta_Ny"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Delta_H_зад"
+      SrcPort		      1
+      DstBlock		      "Sum3"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Sum3"
+      SrcPort		      1
+      Points		      [0, 20]
+      Branch {
+	DstBlock		"Gain3"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 10]
+	Branch {
+	  DstBlock		  "Integrator"
+	  DstPort		  1
+	}
+	Branch {
+	  DstBlock		  "Manual Switch"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Manual Switch"
+      SrcPort		      1
+      Points		      [0, 40]
+      DstBlock		      "Relational\nOperator"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Возмущение1"
+      SrcPort		      1
+      DstBlock		      "Manual Switch"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Возмущение2"
+      SrcPort		      1
+      Points		      [0, -20]
+      DstBlock		      "Relational\nOperator"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Relational\nOperator"
+      SrcPort		      1
+      DstBlock		      "Stop Simulation"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Clock"
+      SrcPort		      1
+      DstBlock		      "T_cp"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Возмущение"
+      SrcPort		      1
+      Points		      [30, 0]
+      Branch {
+	DstBlock		"Sum2"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, 50]
+	DstBlock		"f"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Constant"
+      SrcPort		      1
+      DstBlock		      "Ih"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Gain4"
+      SrcPort		      1
+      Points		      [-30, 0]
+      DstBlock		      "Sum4"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Constant1"
+      SrcPort		      1
+      DstBlock		      "Ip"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Constant2"
+      SrcPort		      1
+      DstBlock		      "Вариант"
+      DstPort		      1
+    }
+    Annotation {
+      Position		      [328, 12]
+      Text		      "МОДЕЛИРОВАНИЕ СИСТЕМЫ СТАБИЛИЗАЦИИ ВЫСОТЫ ПОЛЕТ"
+"А"
+      FontSize		      18
+    }
+    Annotation {
+      Position		      [594, 86]
+      BackgroundColor	      "green"
+      Text		      "Примерные\nзначения"
+      FontSize		      11
+    }
+    Annotation {
+      Position		      [361, 35]
+      BackgroundColor	      "green"
+      Text		      "Графики"
+      FontSize		      11
+    }
+    Annotation {
+      Position		      [168, 61]
+      Text		      "Omega_z"
+    }
+    Annotation {
+      Position		      [301, 120]
+      Text		      "Delta_H"
+    }
+    Annotation {
+      Position		      [233, 109]
+      Text		      "Delta_Alfa"
+    }
+    Annotation {
+      Position		      [233, 150]
+      Text		      "Delta_Theta"
+    }
+    Annotation {
+      Position		      [166, 394]
+      BackgroundColor	      "lightBlue"
+      Text		      "Коэффициенты Ih и Ip, а также возмущение f \nза"
+"давать в командном окне Matlab \nперед началом моделирования"
+    }
+    Annotation {
+      Position		      [478, 393]
+      BackgroundColor	      "yellow"
+      Text		      "\"СЕКУНДОМЕР\"\nЧтобы определить время срабатыв"
+"ания, двойным щелчком мыши\nна переключателе подсоедините \"секундомер\" к си"
+"стеме."
+    }
+  }
+}
