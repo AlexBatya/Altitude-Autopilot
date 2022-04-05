@@ -6,7 +6,7 @@ fprintf('������� ������������ ����
 global a11 a21 a22 b2 a46 a51 Kwz Ktet Ih Ip f DHz N_of_var
 N_of_var=0;
 while N_of_var < 1 | N_of_var > 3
-N_of_var=input('������� ����� ��������: ');
+N_of_var=input('Задай вариант, пёс: ');
 switch N_of_var
    case 1
       a11=1.18;
