@@ -35,7 +35,12 @@ switch N_of_var
    otherwise
       fprintf('����� �������� ����� ��������\n')
    end
-end   
+end 
+A=[-a11 1 0 0; -a21 -a22 0 0; 0 1 0 0; -a46 1 a46 0];
+B=[0; -b2; 0; 0];
+C=[0 1 0 0; 1 0 0 0; 0 0 0 1;0 0 1 0];
+D=[0;0;0;0];
+diffura=ss(A,B,C,D);
 fprintf('�������� �������������:\n')
 fprintf(sprintf('a11=%7.3f\n',a11))
 fprintf(sprintf('a21=%7.3f,   a22=%7.3f,   b2 =%7.3f\n',a21,a22,b2))
@@ -43,7 +48,7 @@ fprintf(sprintf('a46=%7.3f,   a51=%7.3f,   Kwz=%7.3f\n\n',a46,a51,Kwz))
 Ktet=input('������� �������� ������������ Ktet: ');
 f=0;
 DHz=100;
-Ih=0;
+Ih=0.00175;
 Ip=0;
 fprintf('������������ �������� Ih = 0.000875; Ip = 0. ���������� f = 0\n')
 fprintf('����� �������� ����������� ���������� \n')
