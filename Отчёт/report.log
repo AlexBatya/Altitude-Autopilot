@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.3.9)  6 APR 2022 21:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.3.9)  7 APR 2022 03:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -634,23 +634,50 @@ Missing character: There is no � in font cmr8!
 Missing character: There is no � in font cmr8!
 Missing character: There is no � in font cmr8!
 Missing character: There is no � in font cmr8!
-[2 <./img/2.jpg>] [3] [4] (report.aux)
+[2 <./img/2.jpg>] [3]
+<img/3.jpg, id=28, 472.01344pt x 284.56313pt>
+File: img/3.jpg Graphic file (type jpg)
+<use img/3.jpg>
+Package pdftex.def Info: img/3.jpg  used on input line 163.
+(pdftex.def)             Requested size: 455.24411pt x 274.4584pt.
+<img/4.jpg, id=29, 485.56406pt x 275.52937pt>
+File: img/4.jpg Graphic file (type jpg)
+<use img/4.jpg>
+Package pdftex.def Info: img/4.jpg  used on input line 169.
+(pdftex.def)             Requested size: 455.24411pt x 258.32076pt.
+<img/5.jpg, id=30, 474.27188pt x 256.70906pt>
+File: img/5.jpg Graphic file (type jpg)
+<use img/5.jpg>
+Package pdftex.def Info: img/5.jpg  used on input line 175.
+(pdftex.def)             Requested size: 455.24411pt x 246.41829pt.
+ [4 <./img/3.jpg> <./img/4.jpg>]
+<img/6.jpg, id=34, 461.47406pt x 261.22594pt>
+File: img/6.jpg Graphic file (type jpg)
+<use img/6.jpg>
+Package pdftex.def Info: img/6.jpg  used on input line 181.
+(pdftex.def)             Requested size: 455.24411pt x 257.70166pt.
+<img/7.jpg, id=35, 463.7325pt x 307.90031pt>
+File: img/7.jpg Graphic file (type jpg)
+<use img/7.jpg>
+Package pdftex.def Info: img/7.jpg  used on input line 192.
+(pdftex.def)             Requested size: 455.24411pt x 302.27113pt.
+ [5 <./img/5.jpg> <./img/6.jpg>] [6 <./img/7.jpg>] (report.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 5782 strings out of 478659
- 92851 string characters out of 2835967
- 416189 words of memory out of 3000000
- 23790 multiletter control sequences out of 15000+600000
+ 5821 strings out of 478659
+ 93598 string characters out of 2835967
+ 411221 words of memory out of 3000000
+ 23824 multiletter control sequences out of 15000+600000
  417510 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,11n,71p,436b,312s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,11n,71p,436b,368s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\Администратор\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\Администратор\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\Администратор\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1728.pk> <C:\Users\Администратор\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1200.pk> <C:\Users\Администратор\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1200.pk> <C:\Users\Администратор\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1440.pk> <C:\Users\Администратор\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm2074.pk> <C:\Users\Администратор\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2074.pk><D:/Users/Администратор/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Users/Администратор/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Users/Администратор/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:/Users/Администратор/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Users/Администратор/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Users/Администратор/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Users/Администратор/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on report.pdf (4 pages, 202445 bytes).
+Output written on report.pdf (6 pages, 348503 bytes).
 PDF statistics:
- 246 PDF objects out of 1000 (max. 8388607)
+ 259 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

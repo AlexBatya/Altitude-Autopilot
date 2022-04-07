@@ -1,10 +1,15 @@
 # Fdb version 3
-["pdflatex"] 1649269300 "c:/Users/Администратор/Desktop/Лаба управление/Отчёт/report.tex" "report.pdf" "report" 1649269305
-  "c:/Users/Администратор/Desktop/Лаба управление/Отчёт/report.tex" 1649269299 11494 871b67959c39709e494ccd6f34aa73dd ""
-  "img/1.jpg" 1649234727 24005 3d83c91980cbc7e36b71253d0f985228 ""
-  "img/2.jpg" 1649234760 27543 eca6be5d9a6c0522b9696d3157451e1f ""
-  "report.aux" 1649269304 2229 1c277e0cb36cd4078c3edfc75137ff59 "pdflatex"
-  "report.tex" 1649269299 11494 871b67959c39709e494ccd6f34aa73dd ""
+["pdflatex"] 1649290548 "c:/Users/Администратор/Desktop/Лаба управление/Отчёт/report.tex" "report.pdf" "report" 1649290554
+  "c:/Users/Администратор/Desktop/Лаба управление/Отчёт/report.tex" 1649290540 11938 d64cc9663f8997c3191307624d8ea1ef ""
+  "img/1.jpg" 1649234728 24005 3d83c91980cbc7e36b71253d0f985228 ""
+  "img/2.jpg" 1649234762 27543 eca6be5d9a6c0522b9696d3157451e1f ""
+  "img/3.jpg" 1649286408 27389 67af35e48d3b9f18347ddb4fd79701f2 ""
+  "img/4.jpg" 1649287103 27269 50039f7ff0bceaee21d49d035805f79b ""
+  "img/5.jpg" 1649286421 27934 9f0224c2c206711cb94cbda80b9420a7 ""
+  "img/6.jpg" 1649286387 29731 ee65d9fde9eff4621f2ae4f1710dea56 ""
+  "img/7.jpg" 1649286449 31027 776c0940acd975273a2d09053dcf26dc ""
+  "report.aux" 1649290553 3134 bb53e4d050053591aaa4b478b6704f1e "pdflatex"
+  "report.tex" 1649290540 11938 d64cc9663f8997c3191307624d8ea1ef ""
   (generated)
   "report.aux"
   "report.log"
