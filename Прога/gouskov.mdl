@@ -7,7 +7,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.19"
+    ComputedModelVersion    "1.20"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -20,13 +20,7 @@ Model {
     IsArchitectureModel	    0
     IsAUTOSARArchitectureModel 0
     NumParameterArguments   0
-    NumExternalFileReferences 2
-    ExternalFileReference {
-      Reference		      "cstblocks/LTI System"
-      Path		      "gouskov/LTI System"
-      SID		      "50"
-      Type		      "LIBRARY_BLOCK"
-    }
+    NumExternalFileReferences 1
     ExternalFileReference {
       Reference		      "cstblocks/LTI System"
       Path		      "gouskov/LTI System1"
@@ -90,8 +84,8 @@ Model {
 	LoadSaveID		"0"
 	Extents			[1660.0, 739.0]
 	ZoomFactor		[1.0]
-	Offset			[629.61463220605651, 7.2034684429296458]
-	SceneRectInView		[629.61463220605651, 7.2034684429296458, 1660.0, 739.0]
+	Offset			[413.53465139355473, 4.847927306896878]
+	SceneRectInView		[413.53465139355473, 4.847927306896878, 1660.0, 739.0]
       }
       Array {
 	Type			"Simulink.DockComponentInfo"
@@ -149,9 +143,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "User"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Thu Apr 07 02:08:43 2022"
-  RTWModifiedTimeStamp	  571197384
-  ModelVersionFormat	  "%<AutoIncrement:1.19>"
+  LastModifiedDate	  "Fri Apr 08 12:44:22 2022"
+  RTWModifiedTimeStamp	  571322657
+  ModelVersionFormat	  "%<AutoIncrement:1.20>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
@@ -1321,7 +1315,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "143"
+    SIDHighWatermark	    "145"
     SimulinkSubDomain	    "Simulink"
     Block {
       BlockType		      Clock
@@ -1329,13 +1323,6 @@ Model {
       SID		      "1"
       Position		      [760, 335, 780, 355]
       ZOrder		      -1
-    }
-    Block {
-      BlockType		      Clock
-      Name		      "Clock1"
-      SID		      "51"
-      Position		      [785, 770, 805, 790]
-      ZOrder		      40
     }
     Block {
       BlockType		      Constant
@@ -1365,38 +1352,6 @@ Model {
       SID		      "4"
       Position		      [715, 45, 785, 75]
       ZOrder		      -4
-      ShowName		      off
-      FontSize		      8
-      Value		      "N_of_var"
-    }
-    Block {
-      BlockType		      Constant
-      Name		      "Constant3"
-      SID		      "52"
-      Position		      [420, 785, 450, 815]
-      ZOrder		      39
-      BlockMirror	      on
-      BackgroundColor	      "lightBlue"
-      ShowName		      off
-      Value		      "Ih"
-    }
-    Block {
-      BlockType		      Constant
-      Name		      "Constant4"
-      SID		      "53"
-      Position		      [565, 785, 595, 815]
-      ZOrder		      38
-      BlockMirror	      on
-      BackgroundColor	      "lightBlue"
-      ShowName		      off
-      Value		      "Ip"
-    }
-    Block {
-      BlockType		      Constant
-      Name		      "Constant5"
-      SID		      "54"
-      Position		      [740, 480, 810, 510]
-      ZOrder		      37
       ShowName		      off
       FontSize		      8
       Value		      "N_of_var"
@@ -1460,37 +1415,6 @@ Model {
       "on('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousZoomMode','ZoomOut','PreviousAutoscale','XY'),extm"
       "gr.Configuration('Tools','Measurements',true,'Version','2020b')),'Version','2020b','Location',[620 221 1162 641]"
       ")"
-      NumInputPorts	      "1"
-      Floating		      off
-    }
-    Block {
-      BlockType		      Scope
-      Name		      "Delta_H1"
-      SID		      "55"
-      Ports		      [1]
-      Position		      [635, 569, 665, 601]
-      ZOrder		      36
-      BackgroundColor	      "green"
-      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
-      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
-      "ources','WiredSimulink',true,'DataLoggingSaveFormat','StructureWithTime','DataLoggingLimitDataPoints',true,'Data"
-      "LoggingDecimation','1','DataLoggingDecimateData',true,'DataLoggingVariableName','ScopeData1'),extmgr.Configurati"
-      "on('Visuals','Time Domain',true,'SerializedDisplays',{struct('MinYLimReal','-90247747.28852','MaxYLimReal','3754"
-      "3715.13196','YLabelReal','','MinYLimMag','      0.00000','MaxYLimMag','90247747.28852','LegendVisibility','off',"
-      "'XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.68627450"
-      "9803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.41176"
-      "4705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803"
-      "921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','Delta_H','LinePropertiesCache',"
-      "{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'LineNames',{{'Demux1/3'}},'ShowContent',true,'Placement',1)},'"
-      "DisplayPropertyDefaults',struct('MinYLimReal','-90247747.28852','MaxYLimReal','37543715.13196','YLabelReal','','"
-      "MinYLimMag','      0.00000','MaxYLimMag','90247747.28852','LegendVisibility','off','XGrid',true,'YGrid',true,'Pl"
-      "otMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'C"
-      "olorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0"
-      ".392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1"
-      " 1;1 0.0745098039215686 0.650980392156863],'Title','Delta_H','LinePropertiesCache',{{}},'UserDefinedChannelNames"
-      "',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)),extmgr.Configuration('Tools','Plot Nav"
-      "igation',true,'OnceAtStop',false,'PreviousZoomMode','ZoomOut','PreviousAutoscale','XY'),extmgr.Configuration('To"
-      "ols','Measurements',true,'Version','2020b')),'Version','2020b','Location',[60 202 602 622])"
       NumInputPorts	      "1"
       Floating		      off
     }
@@ -1567,31 +1491,11 @@ Model {
       Decimation	      "1"
     }
     Block {
-      BlockType		      Display
-      Name		      "Delta_H_max1"
-      SID		      "56"
-      Ports		      [1]
-      Position		      [840, 635, 930, 665]
-      ZOrder		      35
-      BackgroundColor	      "green"
-      Decimation	      "1"
-    }
-    Block {
       BlockType		      Constant
       Name		      "Delta_H_зад"
       SID		      "7"
       Position		      [610, 200, 640, 230]
       ZOrder		      -7
-      BlockMirror	      on
-      BackgroundColor	      "orange"
-      Value		      "DHz"
-    }
-    Block {
-      BlockType		      Constant
-      Name		      "Delta_H_зад1"
-      SID		      "57"
-      Position		      [635, 635, 665, 665]
-      ZOrder		      34
       BlockMirror	      on
       BackgroundColor	      "orange"
       Value		      "DHz"
@@ -1627,16 +1531,6 @@ Model {
       Decimation	      "1"
     }
     Block {
-      BlockType		      Display
-      Name		      "Delta_H_уст1"
-      SID		      "58"
-      Ports		      [1]
-      Position		      [840, 700, 930, 730]
-      ZOrder		      33
-      BackgroundColor	      "green"
-      Decimation	      "1"
-    }
-    Block {
       BlockType		      Scope
       Name		      "Delta_Ny"
       SID		      "9"
@@ -1668,16 +1562,16 @@ Model {
     }
     Block {
       BlockType		      Scope
-      Name		      "Delta_Ny1"
-      SID		      "59"
+      Name		      "Delta_Ny2"
+      SID		      "144"
       Ports		      [1]
-      Position		      [635, 499, 665, 531]
-      ZOrder		      32
+      Position		      [1730, 309, 1760, 341]
+      ZOrder		      75
       BackgroundColor	      "green"
       ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
       "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
       "ources','WiredSimulink',true,'DataLoggingSaveFormat','StructureWithTime','DataLoggingLimitDataPoints',true,'Data"
-      "LoggingDecimation','1','DataLoggingDecimateData',true,'DataLoggingVariableName','ScopeData2'),extmgr.Configurati"
+      "LoggingDecimation','1','DataLoggingDecimateData',true,'DataLoggingVariableName','ScopeData1'),extmgr.Configurati"
       "on('Visuals','Time Domain',true,'SerializedDisplays',{struct('MinYLimReal','-0.7733','MaxYLimReal','0.52428','YL"
       "abelReal','','MinYLimMag','0.00000','MaxYLimMag','0.7733','LegendVisibility','off','XGrid',true,'YGrid',true,'Pl"
       "otMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'C"
@@ -1707,32 +1601,12 @@ Model {
       Decimation	      "1"
     }
     Block {
-      BlockType		      Display
-      Name		      "Delta_Ny_max1"
-      SID		      "60"
-      Ports		      [1]
-      Position		      [840, 565, 930, 595]
-      ZOrder		      31
-      BackgroundColor	      "green"
-      Decimation	      "1"
-    }
-    Block {
       BlockType		      Demux
       Name		      "Demux"
       SID		      "11"
       Ports		      [1, 4]
       Position		      [450, 126, 455, 164]
       ZOrder		      -11
-      BackgroundColor	      "black"
-      ShowName		      off
-    }
-    Block {
-      BlockType		      Demux
-      Name		      "Demux1"
-      SID		      "61"
-      Ports		      [1, 4]
-      Position		      [475, 561, 480, 599]
-      ZOrder		      30
       BackgroundColor	      "black"
       ShowName		      off
     }
@@ -1802,9 +1676,10 @@ Model {
       BlockType		      Gain
       Name		      "Gain13"
       SID		      "112"
-      Position		      [1500, 335, 1530, 365]
+      Position		      [1495, 335, 1530, 365]
       ZOrder		      58
       BlockMirror	      on
+      BackgroundColor	      "magenta"
       ShowName		      off
       Gain		      "Kwz"
       SaturateOnIntegerOverflow	on
@@ -1813,8 +1688,9 @@ Model {
       BlockType		      Gain
       Name		      "Gain14"
       SID		      "113"
-      Position		      [1375, 405, 1405, 435]
+      Position		      [1375, 405, 1410, 435]
       ZOrder		      61
+      BackgroundColor	      "magenta"
       ShowName		      off
       Gain		      "Ktet"
       SaturateOnIntegerOverflow	on
@@ -1839,6 +1715,16 @@ Model {
       BackgroundColor	      "lightBlue"
       ShowName		      off
       Gain		      "Ip"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain17"
+      SID		      "145"
+      Position		      [1675, 310, 1705, 340]
+      ZOrder		      76
+      ShowName		      off
+      Gain		      "a51"
       SaturateOnIntegerOverflow	on
     }
     Block {
@@ -1876,62 +1762,6 @@ Model {
       SaturateOnIntegerOverflow	on
     }
     Block {
-      BlockType		      Gain
-      Name		      "Gain5"
-      SID		      "62"
-      Position		      [325, 510, 355, 540]
-      ZOrder		      29
-      BlockMirror	      on
-      ShowName		      off
-      Gain		      "Kwz"
-      SaturateOnIntegerOverflow	on
-    }
-    Block {
-      BlockType		      Gain
-      Name		      "Gain6"
-      SID		      "63"
-      Position		      [360, 635, 390, 665]
-      ZOrder		      28
-      BlockMirror	      on
-      ShowName		      off
-      Gain		      "Ktet"
-      SaturateOnIntegerOverflow	on
-    }
-    Block {
-      BlockType		      Gain
-      Name		      "Gain7"
-      SID		      "64"
-      Position		      [575, 500, 605, 530]
-      ZOrder		      27
-      ShowName		      off
-      Gain		      "a51"
-      SaturateOnIntegerOverflow	on
-    }
-    Block {
-      BlockType		      Gain
-      Name		      "Gain8"
-      SID		      "65"
-      Position		      [525, 670, 555, 700]
-      ZOrder		      26
-      BlockMirror	      on
-      BackgroundColor	      "lightBlue"
-      ShowName		      off
-      Gain		      "Ih"
-      SaturateOnIntegerOverflow	on
-    }
-    Block {
-      BlockType		      Gain
-      Name		      "Gain9"
-      SID		      "66"
-      Position		      [525, 740, 555, 770]
-      ZOrder		      25
-      BlockMirror	      on
-      BackgroundColor	      "lightBlue"
-      ShowName		      off
-      Gain		      "Ip"
-      SaturateOnIntegerOverflow	on
-    }
-    Block {
       BlockType		      Display
       Name		      "Ih"
       SID		      "17"
@@ -1943,35 +1773,12 @@ Model {
       Decimation	      "1"
     }
     Block {
-      BlockType		      Display
-      Name		      "Ih1"
-      SID		      "67"
-      Ports		      [1]
-      Position		      [315, 785, 405, 815]
-      ZOrder		      24
-      BlockMirror	      on
-      BackgroundColor	      "green"
-      Decimation	      "1"
-    }
-    Block {
       BlockType		      Integrator
       Name		      "Integrator"
       SID		      "18"
       Ports		      [1, 1]
       Position		      [545, 275, 575, 305]
       ZOrder		      -18
-      BlockRotation	      270
-      BlockMirror	      on
-      NameLocation	      "right"
-      ShowName		      off
-    }
-    Block {
-      BlockType		      Integrator
-      Name		      "Integrator1"
-      SID		      "68"
-      Ports		      [1, 1]
-      Position		      [570, 710, 600, 740]
-      ZOrder		      23
       BlockRotation	      270
       BlockMirror	      on
       NameLocation	      "right"
@@ -2007,37 +1814,6 @@ Model {
       Decimation	      "1"
     }
     Block {
-      BlockType		      Display
-      Name		      "Ip1"
-      SID		      "69"
-      Ports		      [1]
-      Position		      [460, 785, 550, 815]
-      ZOrder		      22
-      BlockMirror	      on
-      BackgroundColor	      "green"
-      Decimation	      "1"
-    }
-    Block {
-      BlockType		      Reference
-      Name		      "LTI System"
-      SID		      "50"
-      Ports		      [1, 1]
-      Position		      [390, 562, 440, 598]
-      ZOrder		      2
-      LibraryVersion	      "2.3"
-      SourceBlock	      "cstblocks/LTI System"
-      SourceType	      "LTI Block"
-      SourceProductBaseCode   "CT"
-      RTWMemSecFuncInitTerm   "Inherit from model"
-      RTWMemSecFuncExecute    "Inherit from model"
-      RTWMemSecDataConstants  "Inherit from model"
-      RTWMemSecDataInternal   "Inherit from model"
-      RTWMemSecDataParameters "Inherit from model"
-      ContentPreviewEnabled   on
-      sys		      "diffura"
-      IC		      "[]"
-    }
-    Block {
       BlockType		      Reference
       Name		      "LTI System1"
       SID		      "94"
@@ -2068,16 +1844,6 @@ Model {
       CurrentSetting	      "0"
     }
     Block {
-      BlockType		      ManualSwitch
-      Name		      "Manual Switch1"
-      SID		      "70"
-      Position		      [635, 687, 665, 723]
-      ZOrder		      21
-      BackgroundColor	      "yellow"
-      ShowName		      off
-      CurrentSetting	      "0"
-    }
-    Block {
       BlockType		      MinMax
       Name		      "MinMax"
       SID		      "21"
@@ -2100,28 +1866,6 @@ Model {
       Inputs		      "2"
     }
     Block {
-      BlockType		      MinMax
-      Name		      "MinMax2"
-      SID		      "71"
-      Ports		      [2, 1]
-      Position		      [780, 611, 810, 644]
-      ZOrder		      20
-      ShowName		      off
-      Function		      "max"
-      Inputs		      "2"
-    }
-    Block {
-      BlockType		      MinMax
-      Name		      "MinMax3"
-      SID		      "72"
-      Ports		      [2, 1]
-      Position		      [780, 541, 810, 574]
-      ZOrder		      19
-      ShowName		      off
-      Function		      "max"
-      Inputs		      "2"
-    }
-    Block {
       BlockType		      RelationalOperator
       Name		      "Relational\nOperator"
       SID		      "23"
@@ -2132,42 +1876,17 @@ Model {
       Operator		      "<="
     }
     Block {
-      BlockType		      RelationalOperator
-      Name		      "Relational\nOperator1"
-      SID		      "73"
-      Ports		      [2, 1]
-      Position		      [695, 737, 725, 768]
-      ZOrder		      18
-      ShowName		      off
-      Operator		      "<="
-    }
-    Block {
-      BlockType		      Stop
-      Name		      "Stop Simulation"
-      SID		      "24"
-      Position		      [715, 300, 755, 340]
-      ZOrder		      -24
-      ShowName		      off
-    }
-    Block {
-      BlockType		      Stop
-      Name		      "Stop Simulation1"
-      SID		      "74"
-      Position		      [740, 735, 780, 775]
-      ZOrder		      17
-      ShowName		      off
-    }
-    Block {
       BlockType		      SubSystem
-      Name		      "Subsystem1"
+      Name		      "State Space"
       SID		      "130"
       Ports		      [1, 2]
       Position		      [1475, 399, 1550, 441]
       ZOrder		      74
+      BackgroundColor	      "yellow"
       RequestExecContextInheritance off
       ContentPreviewEnabled   on
       System {
-	Name			"Subsystem1"
+	Name			"State Space"
 	Location		[667, 77, 1661, 830]
 	SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
 	Open			off
@@ -2389,6 +2108,14 @@ Model {
       }
     }
     Block {
+      BlockType		      Stop
+      Name		      "Stop Simulation"
+      SID		      "24"
+      Position		      [715, 300, 755, 340]
+      ZOrder		      -24
+      ShowName		      off
+    }
+    Block {
       BlockType		      Sum
       Name		      "Sum"
       SID		      "25"
@@ -2514,84 +2241,12 @@ Model {
       SaturateOnIntegerOverflow	on
     }
     Block {
-      BlockType		      Sum
-      Name		      "Sum5"
-      SID		      "75"
-      Ports		      [2, 1]
-      Position		      [335, 570, 355, 590]
-      ZOrder		      16
-      ShowName		      off
-      Inputs		      "|++"
-      SaturateOnIntegerOverflow	on
-    }
-    Block {
-      BlockType		      Sum
-      Name		      "Sum6"
-      SID		      "76"
-      Ports		      [2, 1]
-      Position		      [455, 640, 475, 660]
-      ZOrder		      15
-      BlockMirror	      on
-      ShowName		      off
-      Inputs		      "|+-"
-      SaturateOnIntegerOverflow	on
-    }
-    Block {
-      BlockType		      Sum
-      Name		      "Sum7"
-      SID		      "77"
-      Ports		      [2, 1]
-      Position		      [415, 640, 435, 660]
-      ZOrder		      14
-      BlockMirror	      on
-      ShowName		      off
-      Inputs		      "|++"
-      SaturateOnIntegerOverflow	on
-    }
-    Block {
-      BlockType		      Sum
-      Name		      "Sum8"
-      SID		      "78"
-      Ports		      [2, 1]
-      Position		      [575, 640, 595, 660]
-      ZOrder		      13
-      BlockRotation	      270
-      BlockMirror	      on
-      NameLocation	      "right"
-      ShowName		      off
-      Inputs		      "|-+"
-      SaturateOnIntegerOverflow	on
-    }
-    Block {
-      BlockType		      Sum
-      Name		      "Sum9"
-      SID		      "79"
-      Ports		      [2, 1]
-      Position		      [480, 675, 500, 695]
-      ZOrder		      12
-      BlockMirror	      on
-      NameLocation	      "top"
-      ShowName		      off
-      Inputs		      "|++"
-      SaturateOnIntegerOverflow	on
-    }
-    Block {
       BlockType		      Display
       Name		      "T_cp"
       SID		      "30"
       Ports		      [1]
       Position		      [815, 330, 905, 360]
       ZOrder		      -30
-      BackgroundColor	      "green"
-      Decimation	      "1"
-    }
-    Block {
-      BlockType		      Display
-      Name		      "T_cp1"
-      SID		      "80"
-      Ports		      [1]
-      Position		      [840, 765, 930, 795]
-      ZOrder		      11
       BackgroundColor	      "green"
       Decimation	      "1"
     }
@@ -2620,22 +2275,6 @@ Model {
       ShowName		      off
     }
     Block {
-      BlockType		      ZeroOrderHold
-      Name		      "Zero-Order\nHold2"
-      SID		      "81"
-      Position		      [715, 601, 750, 639]
-      ZOrder		      10
-      ShowName		      off
-    }
-    Block {
-      BlockType		      ZeroOrderHold
-      Name		      "Zero-Order\nHold3"
-      SID		      "82"
-      Position		      [715, 531, 750, 569]
-      ZOrder		      9
-      ShowName		      off
-    }
-    Block {
       BlockType		      Display
       Name		      "f"
       SID		      "33"
@@ -2648,31 +2287,11 @@ Model {
     }
     Block {
       BlockType		      Display
-      Name		      "f1"
-      SID		      "83"
-      Ports		      [1]
-      Position		      [300, 735, 390, 765]
-      ZOrder		      8
-      BlockMirror	      on
-      BackgroundColor	      "green"
-      Decimation	      "1"
-    }
-    Block {
-      BlockType		      Display
       Name		      "Вариант"
       SID		      "34"
       Ports		      [1]
       Position		      [815, 45, 905, 75]
       ZOrder		      -34
-      Decimation	      "1"
-    }
-    Block {
-      BlockType		      Display
-      Name		      "Вариант1"
-      SID		      "84"
-      Ports		      [1]
-      Position		      [840, 480, 930, 510]
-      ZOrder		      7
       Decimation	      "1"
     }
     Block {
@@ -2700,36 +2319,6 @@ Model {
       SID		      "37"
       Position		      [635, 350, 665, 380]
       ZOrder		      -37
-      BlockRotation	      270
-      NameLocation	      "right"
-      ShowName		      off
-      Value		      "0"
-    }
-    Block {
-      BlockType		      Constant
-      Name		      "Возмущение3"
-      SID		      "85"
-      Position		      [345, 685, 375, 715]
-      ZOrder		      6
-      BackgroundColor	      "lightBlue"
-      Value		      "f"
-    }
-    Block {
-      BlockType		      Constant
-      Name		      "Возмущение4"
-      SID		      "86"
-      Position		      [610, 785, 640, 815]
-      ZOrder		      5
-      BlockRotation	      270
-      NameLocation	      "right"
-      ShowName		      off
-    }
-    Block {
-      BlockType		      Constant
-      Name		      "Возмущение5"
-      SID		      "87"
-      Position		      [660, 785, 690, 815]
-      ZOrder		      4
       BlockRotation	      270
       NameLocation	      "right"
       ShowName		      off
@@ -3081,306 +2670,6 @@ Model {
       }
     }
     Line {
-      ZOrder		      88
-      SrcBlock		      "Clock1"
-      SrcPort		      1
-      DstBlock		      "T_cp1"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      89
-      SrcBlock		      "Delta_H_зад1"
-      SrcPort		      1
-      DstBlock		      "Sum8"
-      DstPort		      2
-    }
-    Line {
-      ZOrder		      90
-      SrcBlock		      "Gain8"
-      SrcPort		      1
-      DstBlock		      "Sum9"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      91
-      SrcBlock		      "Manual Switch1"
-      SrcPort		      1
-      Points		      [8, 0; 0, 40]
-      DstBlock		      "Relational\nOperator1"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      92
-      SrcBlock		      "Sum9"
-      SrcPort		      1
-      Points		      [-10, 0]
-      DstBlock		      "Sum6"
-      DstPort		      2
-    }
-    Line {
-      ZOrder		      93
-      SrcBlock		      "Relational\nOperator1"
-      SrcPort		      1
-      DstBlock		      "Stop Simulation1"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      94
-      SrcBlock		      "Constant4"
-      SrcPort		      1
-      DstBlock		      "Ip1"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      99
-      SrcBlock		      "Sum8"
-      SrcPort		      1
-      Points		      [0, 20]
-      Branch {
-	ZOrder			98
-	DstBlock		"Gain8"
-	DstPort			1
-      }
-      Branch {
-	ZOrder			97
-	Points			[0, 10]
-	Branch {
-	  ZOrder		  96
-	  DstBlock		  "Integrator1"
-	  DstPort		  1
-	}
-	Branch {
-	  ZOrder		  95
-	  DstBlock		  "Manual Switch1"
-	  DstPort		  1
-	}
-      }
-    }
-    Line {
-      ZOrder		      100
-      SrcBlock		      "Demux1"
-      SrcPort		      2
-      Points		      [70, 0; 0, -60]
-      DstBlock		      "Gain7"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      101
-      SrcBlock		      "Zero-Order\nHold3"
-      SrcPort		      1
-      DstBlock		      "MinMax3"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      102
-      SrcBlock		      "Gain9"
-      SrcPort		      1
-      Points		      [-30, 0]
-      DstBlock		      "Sum9"
-      DstPort		      2
-    }
-    Line {
-      ZOrder		      103
-      SrcBlock		      "Возмущение4"
-      SrcPort		      1
-      Points		      [0, -65]
-      DstBlock		      "Manual Switch1"
-      DstPort		      2
-    }
-    Line {
-      ZOrder		      104
-      SrcBlock		      "Constant3"
-      SrcPort		      1
-      DstBlock		      "Ih1"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      105
-      SrcBlock		      "Zero-Order\nHold2"
-      SrcPort		      1
-      DstBlock		      "MinMax2"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      136
-      SrcBlock		      "Sum5"
-      SrcPort		      1
-      DstBlock		      "LTI System"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      107
-      SrcBlock		      "Возмущение5"
-      SrcPort		      1
-      Points		      [0, -20]
-      DstBlock		      "Relational\nOperator1"
-      DstPort		      2
-    }
-    Line {
-      ZOrder		      108
-      SrcBlock		      "Demux1"
-      SrcPort		      4
-      Points		      [5, 0]
-      DstBlock		      "Sum6"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      135
-      SrcBlock		      "LTI System"
-      SrcPort		      1
-      DstBlock		      "Demux1"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      110
-      SrcBlock		      "Sum7"
-      SrcPort		      1
-      DstBlock		      "Gain6"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      113
-      SrcBlock		      "MinMax3"
-      SrcPort		      1
-      Points		      [10, 0; 0, 20]
-      Branch {
-	ZOrder			112
-	DstBlock		"Delta_Ny_max1"
-	DstPort			1
-      }
-      Branch {
-	ZOrder			111
-	Points			[-60, 0]
-	DstBlock		"MinMax3"
-	DstPort			2
-      }
-    }
-    Line {
-      ZOrder		      116
-      SrcBlock		      "MinMax2"
-      SrcPort		      1
-      Points		      [10, 0; 0, 20]
-      Branch {
-	ZOrder			115
-	DstBlock		"Delta_H_max1"
-	DstPort			1
-      }
-      Branch {
-	ZOrder			114
-	Points			[-60, 0]
-	DstBlock		"MinMax2"
-	DstPort			2
-      }
-    }
-    Line {
-      ZOrder		      117
-      SrcBlock		      "Sum6"
-      SrcPort		      1
-      DstBlock		      "Sum7"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      120
-      SrcBlock		      "Gain7"
-      SrcPort		      1
-      Points		      [5, 0]
-      Branch {
-	ZOrder			119
-	Points			[0, 35]
-	DstBlock		"Zero-Order\nHold3"
-	DstPort			1
-      }
-      Branch {
-	ZOrder			118
-	DstBlock		"Delta_Ny1"
-	DstPort			1
-      }
-    }
-    Line {
-      ZOrder		      121
-      SrcBlock		      "Gain6"
-      SrcPort		      1
-      Points		      [-10, 0]
-      DstBlock		      "Sum5"
-      DstPort		      2
-    }
-    Line {
-      ZOrder		      124
-      SrcBlock		      "Возмущение3"
-      SrcPort		      1
-      Points		      [41, 0]
-      Branch {
-	ZOrder			123
-	Points			[4, 0]
-	DstBlock		"Sum7"
-	DstPort			2
-      }
-      Branch {
-	ZOrder			122
-	Points			[0, 50]
-	DstBlock		"f1"
-	DstPort			1
-      }
-    }
-    Line {
-      ZOrder		      125
-      SrcBlock		      "Integrator1"
-      SrcPort		      1
-      Points		      [0, 10]
-      DstBlock		      "Gain9"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      126
-      SrcBlock		      "Gain5"
-      SrcPort		      1
-      DstBlock		      "Sum5"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      133
-      SrcBlock		      "Demux1"
-      SrcPort		      3
-      Points		      [100, 0]
-      Branch {
-	ZOrder			132
-	DstBlock		"Delta_H1"
-	DstPort			1
-      }
-      Branch {
-	ZOrder			131
-	Points			[0, 35]
-	Branch {
-	  ZOrder		  130
-	  DstBlock		  "Sum8"
-	  DstPort		  1
-	}
-	Branch {
-	  ZOrder		  129
-	  Points		  [105, 0]
-	  Branch {
-	    ZOrder		    128
-	    DstBlock		    "Zero-Order\nHold2"
-	    DstPort		    1
-	  }
-	  Branch {
-	    ZOrder		    127
-	    Points		    [0, 95]
-	    DstBlock		    "Delta_H_уст1"
-	    DstPort		    1
-	  }
-	}
-      }
-    }
-    Line {
-      ZOrder		      134
-      SrcBlock		      "Demux1"
-      SrcPort		      1
-      Points		      [5, 0; 0, -40]
-      DstBlock		      "Gain5"
-      DstPort		      1
-    }
-    Line {
       ZOrder		      137
       SrcBlock		      "LTI System1"
       SrcPort		      1
@@ -3498,7 +2787,7 @@ Model {
       ZOrder		      213
       SrcBlock		      "Sum13"
       SrcPort		      1
-      DstBlock		      "Subsystem1"
+      DstBlock		      "State Space"
       DstPort		      1
     }
     Line {
@@ -3541,7 +2830,7 @@ Model {
     }
     Line {
       ZOrder		      214
-      SrcBlock		      "Subsystem1"
+      SrcBlock		      "State Space"
       SrcPort		      1
       DstBlock		      "Demux2"
       DstPort		      1
@@ -3550,7 +2839,7 @@ Model {
       ZOrder		      186
       SrcBlock		      "Demux2"
       SrcPort		      1
-      Points		      [37, 0; 0, -45]
+      Points		      [19, 0; 0, -45]
       DstBlock		      "Gain13"
       DstPort		      1
     }
@@ -3620,8 +2909,23 @@ Model {
       ZOrder		      218
       SrcBlock		      "Gain13"
       SrcPort		      1
-      Points		      [-55, 0]
+      Points		      [-50, 0]
       DstBlock		      "Sum13"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      232
+      SrcBlock		      "Demux2"
+      SrcPort		      2
+      Points		      [41, 0; 0, -80]
+      DstBlock		      "Gain17"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      233
+      SrcBlock		      "Gain17"
+      SrcPort		      1
+      DstBlock		      "Delta_Ny2"
       DstPort		      1
     }
     Annotation {
@@ -3695,43 +2999,6 @@ Model {
       InternalMargins	      [0, 0, 0, 0]
       BackgroundColor	      "yellow"
       ZOrder		      -9
-    }
-    Annotation {
-      SID		      "89"
-      Name		      "Omega_z"
-      Position		      [400, 506, 445, 520]
-      InternalMargins	      [0, 0, 0, 0]
-      ZOrder		      -1
-    }
-    Annotation {
-      SID		      "90"
-      Name		      "Delta_Theta"
-      Position		      [510, 587, 566, 601]
-      InternalMargins	      [0, 0, 0, 0]
-      ZOrder		      -2
-    }
-    Annotation {
-      SID		      "91"
-      Name		      "Примерные\nзначения"
-      Position		      [884, 541, 946, 569]
-      InternalMargins	      [0, 0, 0, 0]
-      BackgroundColor	      "green"
-      ZOrder		      -3
-      FontSize		      11
-    }
-    Annotation {
-      SID		      "92"
-      Name		      "Delta_H"
-      Position		      [572, 570, 610, 584]
-      InternalMargins	      [0, 0, 0, 0]
-      ZOrder		      -4
-    }
-    Annotation {
-      SID		      "93"
-      Name		      "Delta_Alfa"
-      Position		      [499, 556, 547, 570]
-      InternalMargins	      [0, 0, 0, 0]
-      ZOrder		      -5
     }
   }
 }
